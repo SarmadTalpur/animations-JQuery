@@ -20,7 +20,16 @@
 				let upcount=0;
 				let downcount=0;
 
-				
+				$('#up').click(function(){
+					$('div').css("display","none");
+					if(upcount==downcount)
+						upcount++;
+				});
+				$('#down').click(function(){
+					$('div').css("display","initial");
+					if(downcount!=upcount)
+						downcount++;
+				});
 				$('#toggle').click(function(){
 					if(upcount==downcount){
 						$('div').css("display","none");
