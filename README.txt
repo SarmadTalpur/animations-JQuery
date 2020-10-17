@@ -1,0 +1,4 @@
+**** I am trying to make animation functions with Jquery
+**** I have made function for Toggle button and it works perfectly fine, but I am unable to make functions for Slide Up and Slide Down buttons.
+**** I tried to make functions, they worked too but they are not alligned with Toggle function, like if I click Slide up, it works but after that Toggle animation does not.
+**** I want help with these two functions for button Slide Up and Slide Down

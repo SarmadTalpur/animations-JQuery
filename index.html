@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		
+		<div>
+			<p>Hello! This is Katie</p>
+			<p>How may I help you?</p>
+			<p>Try saying Katie, what is the weather today?</p>
+		</div>
+		<button id="up">Slide Up</button>
+		<button id="down">Slide Down</button>
+		<button id="toggle">Toggle</button>
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				let upcount=0;
+				let downcount=0;
+
+				
+				$('#toggle').click(function(){
+					if(upcount==downcount){
+						$('div').css("display","none");
+						upcount++;
+					}
+					else if(upcount!=downcount){
+						$('div').css('display','initial');
+						downcount++;
+					}
+					
+				});
+			});
+		</script>
+	</body>
+</html>
